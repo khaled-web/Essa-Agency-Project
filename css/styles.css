@@ -1,0 +1,159 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/*
+=============== 
+Variables
+===============
+*/
+ 
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(43, 86%, 17%);
+  --clr-primary-2: hsl(43, 77%, 27%);
+  --clr-primary-3: hsl(43, 72%, 37%);
+  --clr-primary-4: hsl(42, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: hsl(42, 78%, 60%);
+  /* black primary color */
+  --clr-black-1: #373331;
+  --clr-black-2: #000;
+  --clr-black-3: #333;
+  --clr-black-4: #63686e;
+  --clr-black-5: #272D2D;
+  --clr-black-6: #393e46;
+  --clr-black-7: #828489;
+  --clr-black-8: #272932;
+  --clr-black-9: #191716;
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(43, 89%, 70%);
+  --clr-primary-7: hsl(43, 90%, 76%);
+  --clr-primary-8: hsl(45, 86%, 81%);
+  --clr-primary-9: hsl(45, 90%, 88%);
+  --clr-primary-10: hsl(45, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-grey-11: #b6c2d9;
+  --clr-grey-12: #9e90a2;
+  --clr-grey-13: #beb7a4;
+  /* white primary color*/
+  --clr-white-1: #fff;
+  --clr-white-2: #ffe5ab;
+  --clr-white-3: #fcea90;
+  --clr-white-4: #fff1c1;
+  --clr-white-5: #ffd6a4;
+  --clr-white-6: #e0e2db;
+    /* blue primary color*/
+  --clr-blue-1: #4d7ea8;
+  /* red primary color*/
+  --clr-red-1: #BB2525;
+  --clr-red-2: #e66b6b;
+  /* yellow primary color */
+  --clr-yellow-1: #e6af2e;
+
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --ff-third: 'Sacramento', cursive;
+  --transition: all .5s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px var(--clr-black-8);
+  --max-width: 1170px;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--ff-primary);
+}
+
+
+/*
+=============== 
+navBar
+===============
+*/
+
+nav ul{
+  list-style-type: none;
+  border-top: 5px solid var(--clr-yellow-1);
+  background: var(--clr-black-9);
+}
+
+nav ul li a{
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  padding: 15px 25px;  
+  color: var(--clr-yellow-1);
+  transition: var(--transition);
+  font-weight: 700;
+}
+
+nav ul a:hover{
+  color: var(--clr-white-6);
+}
+
+.logo{
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: var(--clr-black-9);
+  background: var(--clr-yellow-1);
+  font-style: italic;
+  transition: var(--transition);
+}
+
+.logo:hover{
+  background: var(--clr-white-6);
+  color: var(--clr-yellow-1);
+}
+
+@media screen and (min-width: 768px){
+  nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  nav ul il{
+    flex: 1 0 auto;
+  }
+
+  .logo{
+    display: block;
+    text-align: center;
+  }
+
+  .logo .fa{
+    display: none;
+  }
+}
+
+
