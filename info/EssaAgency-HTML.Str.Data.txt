@@ -10,3 +10,27 @@ nav>
    5*li>a
 
 ..........................................................................
+
+Banner
+.......
+
+header.banner>
+
+	div.banner-title>
+
+		h1.banner-text
+
+		div.banner-underline
+
+		div.banner-btn> 2 * button
+
+..........................................................................
+
+Skills
+.......
+
+section.skills>
+
+	div.skills-container>
+
+		4* article.skills-item> icon + h1 + p
