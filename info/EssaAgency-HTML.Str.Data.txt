@@ -34,3 +34,24 @@ section.skills>
 	div.skills-container>
 
 		4* article.skills-item> icon + h1 + p
+
+..........................................................................
+
+services
+.........
+
+section#services>
+
+	div.title>
+
+		div.title-text> h1
+
+		div.title-underline>
+
+	div.services-container>
+
+		4* article.service-item. service-item-(black || white)>
+
+			div.front-text> awesome + h1
+
+			div.back-text> h1 + p + button

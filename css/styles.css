@@ -57,6 +57,8 @@ Variables
   --clr-white-4: #fff1c1;
   --clr-white-5: #ffd6a4;
   --clr-white-6: #e0e2db;
+  --clr-white-7: #FFE5B9;
+  --clr-white-8: #FAF4F4;
     /* blue primary color*/
   --clr-blue-1: #4d7ea8;
   /* red primary color*/
@@ -68,7 +70,9 @@ Variables
   --ff-primary: 'Roboto', sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
   --ff-third: 'Sacramento', cursive;
-  --transition: all .8s linear;
+  --transition: all .5s linear;
+  --transition-1: transform 2s; 
+  --transition-2: bottom 2s;
   --spacing: 0.25rem;
   --radius: 0.5rem;
   --light-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -130,7 +134,7 @@ nav ul a:hover{
 }
 
 .logo:hover{
-  background: var(--clr-white-6);
+  background: var(--clr-white-8);
   color: var(--clr-yellow-1);
 }
 
@@ -179,9 +183,9 @@ Banner
 
 .banner-underline{
   width: 200px;
-  border: 2px solid var(--clr-white-6);
+  border: 2px solid var(--clr-yellow-1);
   margin: 10px auto 50px auto;
-  background: var(--clr-white-6);
+  background: var(--clr-yellow-1);
 }
 
 .banner-btn{
@@ -235,6 +239,7 @@ Skills
   grid-template-columns: 1fr;
   grid-template-rows: auto auto 1fr;
   box-shadow: var(--light-shadow);
+  background: var(--clr-white-1);
 }
 
 .skills-item:hover{
@@ -273,6 +278,158 @@ Skills
   margin: 0 auto;
   color: var(--clr-black-1);
 }
+
+/*
+=============== 
+Services
+===============
+*/
+
+#services{
+  min-height: 100vh;
+  background: url(../images/services.jpeg) center/cover no-repeat fixed;
+  padding: 1.5rem 0 5rem 0;
+}
+
+.title{
+  margin: 2.5rem 0;
+}
+
+.title-text{
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--clr-yellow-1);
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.title-underline{
+  width: 12.5rem;
+  border: 3px solid var(--clr-yellow-1);
+  margin: 0 auto;
+  background: var(--clr-yellow-1);
+}
+
+.services-container{
+  max-width: 90vw;
+  margin: 0 auto;
+  color: var(--clr-white-6);
+}
+
+.service-item{
+  overflow: hidden;
+  position: relative;
+  padding: 4rem;
+  transition: var(--transition);
+}
+
+.service-item-black{
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+.service-item-white{
+  background: linear-gradient(rgba(206,208,206,0.6),rgba(206,208,206,0.6));
+  color: var(--clr-black-9);
+}
+
+.front-text{
+  text-align: center;
+  transition: var(--transition-1);
+}
+
+.front-text .fas{
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: var(--clr-yellow-1);
+}
+
+.front-text h1{
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
+.back-text{
+  position: absolute;
+  bottom: -15rem;
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  transition: var(--transition-1);
+}
+
+.back-text h1{
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
+.back-text p{
+  font-size: 1.2rem;
+  width: 23rem;
+  font-weight: 700;
+}
+
+.back-text button{
+  margin-top: 1.5rem;
+  padding: 10px 20px;
+  background: transparent;
+  border: 2px solid var(--clr-yellow-1);
+  font-size: 1.5rem;
+  color: var(--clr-yellow-1);
+  transition: var(--transition);
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.back-text button:hover{
+  background: var(--clr-yellow-1);
+  color: var(--clr-black-9);
+}
+
+.service-item-white button{
+  background: var(--clr-yellow-1);
+  color: var(--clr-black-9);
+  transition: var(--transition);
+}
+
+.service-item-white button:hover{
+  background: var(--clr-black-9);
+  color: var(--clr-yellow-1);
+  border-color: var(--clr-black-9);
+}
+
+.service-item:hover .front-text{
+  transform: translateY(-12.5rem);
+}
+
+.service-item:hover .back-text{
+  transform: translateY(-15rem);
+}
+
+@media screen and (min-width: 768px){
+  .services-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .services-container .service-item:nth-of-type(1){
+    order: 1;
+  }
+
+  .services-container .service-item:nth-of-type(2){
+    order: 2;
+  }
+
+  .services-container .service-item:nth-of-type(3){
+    order: 4;
+  }
+
+    .services-container .service-item:nth-of-type(4){
+    order: 3;
+  }
+}
+
 
 
 
