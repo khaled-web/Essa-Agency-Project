@@ -55,3 +55,35 @@ section#services>
 			div.front-text> awesome + h1
 
 			div.back-text> h1 + p + button
+
+
+..........................................................................
+
+projects
+.........
+
+section#projects>
+
+	div.title> 
+
+		div.title-text> h1
+
+		div.title-underline
+
+	div.projects-container>
+
+		3* article.projects-item>
+
+			img+
+			
+			div.img-text>
+
+				h1 +
+
+				h6 
+
+			div.img-footer>
+
+				div.footer-icon> awesome Icon
+
+				div.footer-date> text
