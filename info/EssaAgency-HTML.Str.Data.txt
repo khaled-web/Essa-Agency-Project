@@ -87,3 +87,14 @@ section#projects>
 				div.footer-icon> awesome Icon
 
 				div.footer-date> text
+
+..........................................................................
+
+Filler
+.......
+
+section#filler-contact> 
+
+	h1 + 
+
+	button

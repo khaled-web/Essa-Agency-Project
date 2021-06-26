@@ -458,6 +458,7 @@ projects
   color: var(--clr-white-1);
   overflow: hidden;
   margin: 3rem 0;
+  border-radius: var(--radius);
 }
 
 .projects-item img{
@@ -508,6 +509,45 @@ projects
 .projects-item:hover .img-text,
 .projects-item:hover .img-footer{
   opacity: 1;
+}
+
+/*
+=============== 
+Fillers
+===============
+*/
+
+#filler-contact{
+  height: 25vh;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/filler.jpeg) center/cover no-repeat fixed;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5rem;
+}
+
+#filler-contact h1{
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: var(--clr-white-1);
+  margin-bottom: 1.5rem;
+}
+
+#filler-contact button{
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: .5rem 1rem;
+  border: 2px solid var(--clr-yellow-1);
+  color: var(--clr-yellow-1);
+  background: transparent;
+  transition: var(--transition);
+  border-radius: var(--radius);
+}
+
+#filler-contact button:hover{
+  background: var(--clr-yellow-1);
+  color: var(--clr-black-9);
 }
 
 
