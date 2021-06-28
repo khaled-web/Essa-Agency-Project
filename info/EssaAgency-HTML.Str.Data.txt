@@ -98,3 +98,34 @@ section#filler-contact>
 	h1 + 
 
 	button
+
+..........................................................................
+
+posts
+......
+
+section#posts>
+
+	div.title> 
+
+		div.title-text> h1
+
+		div.underline
+
+	div.post-container>
+
+		3* article.post-item> 
+
+			div.img-container>
+
+				img + 
+				
+				awesomeIcon
+
+			div.text-container> 
+
+				h1 + 
+
+				p 
+
+			a.post-a

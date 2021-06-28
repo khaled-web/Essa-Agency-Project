@@ -170,7 +170,7 @@ Banner
 
 #banner{
   min-height: 90vh;
-  background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url(../images/image-banner.jpeg) center/cover no-repeat fixed;
+  background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url(../images/banner-30.jpeg) center/cover no-repeat fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -204,6 +204,7 @@ Banner
   color: var(--clr-yellow-1);
   border: 2px solid var(--clr-yellow-1);
   transition: var(--transition);
+  border-radius: var(--radius);
 }
 
 .banner-btn button:hover{
@@ -219,12 +220,11 @@ Skills
 
 #skills{
   padding: 3rem 0;
-  background: var(--clr-white-1);
+  background: var(--clr-grey-13);
 }
 
 .skills-container{
-  width: 80vw;
-  max-width: 1170px;
+  width: 90vw;
   margin: 2rem auto;
   display: grid;
   grid-column-gap: 2rem;
@@ -233,9 +233,9 @@ Skills
 
 .skills-item{
   text-align: center;
-  margin: 2rem auto;
-  transition: var(--transition);
+  margin: 2rem auto;;
   padding: 1rem;
+  transition: var(--transition);
   border-radius: var(--radius);
   display: grid;
   grid-template-columns: 1fr;
@@ -265,6 +265,7 @@ Skills
   font-size: 3rem;
   color: var(--clr-black-9);
   letter-spacing: 1px;
+  transition: var(--transition);
 }
 
 .skills-item h1{
@@ -273,12 +274,14 @@ Skills
   margin: 2rem 0;
   color: var(--clr-yellow-1);
   text-transform: uppercase;
+  transition: var(--transition);
 }
 
 .skills-item p{
   width: 15rem;
   margin: 0 auto;
   color: var(--clr-black-1);
+  transition: var(--transition);
 }
 
 /*
@@ -300,7 +303,7 @@ Services
 .title-text{
   text-align: center;
   font-size: 2.5rem;
-  color: var(--clr-yellow-1);
+  color: var(--clr-white-6);
   font-style: italic;
   text-transform: uppercase;
 }
@@ -518,10 +521,10 @@ Fillers
 */
 
 #filler-contact{
-  height: 25vh;
+  /* max-height: 40vh; */
   background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/filler.jpeg) center/cover no-repeat fixed;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 5rem;
@@ -549,6 +552,104 @@ Fillers
   background: var(--clr-yellow-1);
   color: var(--clr-black-9);
 }
+
+
+/*
+=============== 
+Posts
+===============
+*/
+
+#posts{
+  background: var(--clr-grey-13);
+  padding: 1.5rem 0 5rem 0;
+}
+
+.post-container{
+  max-width: 1170px;
+  width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-column-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
+}
+
+.post-item{
+  background: var(--clr-white-6);
+  color: var(--clr-black-9);
+  margin: 2rem 0;
+  border-radius: var(--radius);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+.img-container{
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.8));
+}
+
+.img-container img{
+  width: 100%;
+  display: block;
+}
+
+.img-container .fas{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: var(--clr-yellow-1);
+  transition: var(--transition-5);
+  opacity: 0;
+}
+
+.img-container:hover img{
+  opacity: .4;
+}
+
+.img-container:hover .fas{
+  opacity: 1;
+}
+
+.text-container{
+  padding: .5rem;
+}
+
+.text-container h1{
+  text-transform: uppercase;
+  color: var(--clr-yellow-1);
+}
+
+.text-container p{
+  margin: 1rem 0 0 0;
+  max-width: 30rem;
+  text-transform: capitalize;
+  color: var(--clr-black-8);
+}
+
+.post-a{
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: center;
+  padding: .5rem;
+  display: inline-block;
+  color: var(--clr-black-3);
+  background: var(--clr-yellow-1);
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  transition: var(--transition);
+}
+
+.post-a:hover{
+  color: var(--clr-yellow-1);
+  background: var(--clr-black-9);
+}
+
+
+
 
 
 
