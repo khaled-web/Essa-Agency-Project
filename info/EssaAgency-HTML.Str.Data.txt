@@ -128,4 +128,19 @@ section#posts>
 
 				p 
 
-			a.post-a
+			div.post-footer>
+		
+				span>awesomeIcon +
+
+				a
+
+..........................................................................
+
+footer
+.......
+
+footer.section.footer> 
+
+	ul.footer-icons> 3* Li> a.nav-icon
+	p.copyright
+				
