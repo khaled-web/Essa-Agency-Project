@@ -1,0 +1,132 @@
+HTML-File
+
+
+    <!-- skills -->
+    <section id="skills">
+      <!-- skills-container -->
+      <div class="skills-container">
+        <!-- single-skill -->
+        <article class="skills-item">
+          <i class="fas fa-code"></i>
+          <h1>code</h1>
+          <p>
+            Essa Agency’s front-end developers are experts at designing responsive websites, with CSS and JavaScript and HTML.
+          </p>
+        </article>
+        <!-- end of single-skill -->
+
+        <!-- single-skill -->
+        <article class="skills-item">
+          <i class="fas fa-file-invoice"></i>
+          <h1>documented</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quibusdam dolores ipsum amet saepe voluptatum.
+          </p>
+        </article>
+        <!-- end of single-skill -->
+
+
+        <!-- single-skill -->
+        <article class="skills-item">
+          <i class="fas fa-map-marked-alt"></i>
+          <h1>optimized</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quibusdam dolores ipsum amet saepe voluptatum.
+          </p>
+        </article>
+        <!-- end of single-skill -->
+
+        <!-- single-skill -->
+        <article class="skills-item">
+          <i class="fas fa-desktop"></i>
+          <h1>retina</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quibusdam dolores ipsum amet saepe voluptatum.
+          </p>
+        </article>
+        <!-- end of single-skill -->
+      </div>
+      <!-- end of skills-container -->
+    </section>
+    <!-- end of skills -->
+
+
+CSS-file
+
+
+
+/*
+=============== 
+Skills
+===============
+*/
+
+#skills{
+  padding: 3rem 0;
+  background: var(--clr-grey-13);
+}
+
+.skills-container{
+  width: 90vw;
+  margin: 2rem auto;
+  display: grid;
+  grid-column-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(268.5px,1fr));
+}
+
+.skills-item{
+  text-align: center;
+  margin: 2rem auto;;
+  padding: 1rem;
+  transition: var(--transition);
+  border-radius: var(--radius);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr;
+  box-shadow: var(--light-shadow);
+  background: var(--clr-white-1);
+}
+
+.skills-item p{
+  color: red;
+}
+
+.skills-item:hover{
+  background: var(--clr-yellow-1);
+  box-shadow: var(--dark-shadow);
+}
+
+.skills-item:hover h1{
+  color: var(--clr-white-1);
+}
+
+.skills-item:hover .fas{
+  color: var(--clr-white-1);
+}
+
+.skills-item:hover p{
+  color: var(--clr-white-1);
+}
+
+.skills-item .fas{
+  font-size: 3rem;
+  color: var(--clr-black-9);
+  letter-spacing: 1px;
+  transition: var(--transition);
+}
+
+.skills-item h1{
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin: 2rem 0;
+  color: var(--clr-yellow-1);
+  text-transform: uppercase;
+  transition: var(--transition);
+}
+
+.skills-item p{
+  width: 15rem;
+  margin: 0 auto;
+  color: var(--clr-black-1);
+  transition: var(--transition);
+}

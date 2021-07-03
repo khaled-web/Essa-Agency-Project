@@ -224,71 +224,60 @@ Banner
 Skills
 ===============
 */
-
-#skills{
-  padding: 3rem 0;
-  background: var(--clr-grey-13);
+ .skills{
+ background: var(--clr-white-6);
 }
 
-.skills-container{
-  width: 90vw;
-  margin: 2rem auto;
-  display: grid;
-  grid-column-gap: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(268.5px,1fr));
+.skill{
+ padding: 2.5rem 0;
+ text-align: center;
+ transition: var(--transition);
 }
 
-.skills-item{
-  text-align: center;
-  margin: 2rem auto;;
-  padding: 1rem;
-  transition: var(--transition);
-  border-radius: var(--radius);
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto 1fr;
-  box-shadow: var(--light-shadow);
-  background: var(--clr-white-1);
+.skill-icon{
+ font-size: 2.5rem;
+ margin-bottom: 1.25rem;
+ transition: var(--transition);
+ display: inline-block;
+ color: var(--clr-primary-5);
 }
 
-.skills-item:hover{
-  background: var(--clr-yellow-1);
-  box-shadow: var(--dark-shadow);
-}
-
-.skills-item:hover h1{
-  color: var(--clr-white-1);
-}
-
-.skills-item:hover .fas{
-  color: var(--clr-white-1);
-}
-
-.skills-item:hover p{
-  color: var(--clr-white-1);
-}
-
-.skills-item .fas{
-  font-size: 3rem;
-  color: var(--clr-black-9);
-  letter-spacing: 1px;
-  transition: var(--transition);
-}
-
-.skills-item h1{
-  font-size: 2rem;
-  letter-spacing: 2px;
-  margin: 2rem 0;
-  color: var(--clr-yellow-1);
+.skill-title{
+  font-size: 1.3rem;
   text-transform: uppercase;
-  transition: var(--transition);
+  margin-bottom: .75rem;
+  color: var(--clr-black-1)
 }
 
-.skills-item p{
-  width: 15rem;
-  margin: 0 auto;
-  color: var(--clr-black-1);
-  transition: var(--transition);
+.skill-text{
+ color: var(--clr-grey-5);
+ max-width: 17rem;
+ margin: 0 auto;
+ font-weight: 500;
+ color: var(--clr-black-9);
+ text-transform: capitalize;
+}
+
+.skill:hover{
+  background: var(--clr-white-1);
+  box-shadow: 0px 3px var(--clr-primary-5);
+}
+
+
+@media screen and (min-width:576px){
+ .skills{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+ }
+
+}
+
+@media screen and (min-width:1200px){
+ .skills{
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+ }
+
 }
 
 /*
@@ -310,7 +299,7 @@ Services
 .title-text{
   text-align: center;
   font-size: 2.5rem;
-  color: var(--clr-white-6);
+  color: var(--clr-black-2);
   font-style: italic;
   text-transform: uppercase;
 }
@@ -568,7 +557,7 @@ Posts
 */
 
 #posts{
-  background: var(--clr-grey-13);
+  background: var(--clr-white-6);
   padding: 1.5rem 0 5rem 0;
 }
 
@@ -638,6 +627,7 @@ Posts
 .text-container p{
   margin: 1rem 0 0 0;
   max-width: 30rem;
+  max-height: 25rem;
   text-transform: capitalize;
   color: var(--clr-black-8);
 }
