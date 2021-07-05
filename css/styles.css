@@ -360,13 +360,14 @@ Services
 }
 
 .back-text h1{
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
   text-transform: capitalize;
   font-size: 1.5rem;
 }
 
 .back-text p{
   font-size: 1.2rem;
+  text-transform: capitalize;
   width: 23rem;
   font-weight: 700;
 }
@@ -478,8 +479,9 @@ projects
 }
 
 .img-text h1{
-  font-size: 2rem;
+  font-size: 1.40rem;
   margin-bottom: .5rem;
+  text-transform: uppercase;
 }
 
 .img-text h6{
@@ -630,6 +632,7 @@ Posts
   max-height: 25rem;
   text-transform: capitalize;
   color: var(--clr-black-8);
+  line-height: 1.4rem;
 }
 
 .post-a{
