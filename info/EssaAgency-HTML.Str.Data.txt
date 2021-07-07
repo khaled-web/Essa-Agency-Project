@@ -143,4 +143,21 @@ footer.section.footer>
 
 	ul.footer-icons> 3* Li> a.nav-icon
 	p.copyright
+
+.................................................................................
+
+contact-page
+**********
+
+section.section.contactPage>
+
+	div.section-title> h2 + div.underline
+
+	div.section-center.contactPage-center>
+
+		article.contact-form> 
+
+			form> div.form-group> 2* input.form-control + textArea.form-control
+
+			      button.submit-btn.btn	
 				
